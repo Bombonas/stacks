@@ -100,11 +100,14 @@ class LayoutPartCentralState extends State<LayoutPartCentral> {
                   semanticLabel: 'Text to announce in accessibility modes',
                 )), 
       ),
-      child: const Padding(
+      child: Padding(
         padding: EdgeInsets.only(top: 50.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [Text("Central")],
+          children: [Text("Central", 
+                          style: TextStyle(
+                          color: appData.colorText,
+  ),)],
         ),
       ) 
     );
